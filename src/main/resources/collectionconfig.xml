@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean class="org.example.com.student.Emp" name="emp">
+
+    </bean>
+    <bean>
+        <property name="name" value="Shiva Singh"/>
+        <property name="phones">
+            <list>
+                <value>874322342</value>
+                <value>343528992</value>
+                <value>88545343</value>
+            </list>
+        </property>
+        <property name="addresses">
+            <set>
+                <value>Kharela</value>
+                <value>Mahoba</value>
+                <value>Kanpur</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="java" value="4months"/>
+                <entry key="python" value="2months"/>
+                <entry key="javascript" value="5months"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>
